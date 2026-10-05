@@ -35,3 +35,21 @@ During a fire or toxic gas leak, emergency responders must inspect rooms to conf
 该示例保留了 $G(t)$、$V_R$、$N$、$d(e)$、$R_0(r)$、$S(p,t)$、$v_{\mathrm{eff}}(e,t)$、$W(e,t)$、$T_{\mathrm{sweep}}(r,t)$、$T_{\mathrm{total}}(j)$、$T_{\mathrm{makespan}}$ 和 $\mathrm{CV}$。
 
 烟气浓度采用 $\mathrm{kg\,m^{-3}}$，速度采用 $\mathrm{m\,s^{-1}}$，时间及具有时间量纲的风险调整路径代价采用 $\mathrm{s}$。$\mathrm{CV}$ 为无量纲量，不能在未说明转换时把小数值当作百分数。不要把这十二个符号复制到使用其他模型的论文中。正文交付的表格后不附本参考中的解释。
+
+## 两行以内的模型优缺点
+
+以下六点是用户确认的压缩版；在本次目标 LaTeX 版式中已用段落行数检查确认每点含加粗标题不超过两行。更换模板仍须重新核查。
+
+### Strengths
+
+1. **Hazard-dependent routing.** Smoke and fatigue modify travel costs, linking route selection to changing local conditions.
+2. **Explicit verification.** Separate clearance states and checks by a second responder make high-risk verification traceable.
+3. **Multiple building layouts.** A common framework handles stair travel and room risks in the tested one-, three-, and five-floor buildings.
+
+### Weaknesses
+
+1. **Simplified behavior.** Omitted hesitation and route choice can bias congestion estimates; calibrated agent-based simulations could address this.
+2. **Fixed connectivity.** Route closures can invalidate schedules; updating the graph and recalculating assignments would address this limitation.
+3. **Workload imbalance.** The three-floor CV is 24.5%, above the 15% target; assignment rules need to enforce the balance constraint.
+
+条目保留具体机制或证据，不重复整段建模过程。缺点中的改进是建议，不代表已实现；三层情景的 24.5% 与 15% 只属于该论文，不能迁移为其他论文的结果。

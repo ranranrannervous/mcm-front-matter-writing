@@ -1,4 +1,4 @@
 interface:
-  display_name: "美赛论文前置章节写作"
-  short_description: "撰写引言、简洁假设和三线符号表，保持克制学术文风与 Our Work 空图占位"
-  default_prompt: "使用 $mcm-front-matter-writing，依据题目和论文撰写前置章节，采用平实、严谨的学术语言，Our Work 仅保留空图占位，并落实四条以内、每条三行以内的假设及标准三线符号表。"
+  display_name: "美赛论文固定章节写作"
+  short_description: "撰写引言、假设、三线符号表与两行以内的模型优缺点，保持克制文风及 Our Work 占位"
+  default_prompt: "使用 $mcm-front-matter-writing，按需撰写前置章节与文末模型优缺点，保持平实、严谨、克制的语言；Our Work 仅留空图，假设最多四条且每条三行以内，符号表采用三线表且表后无说明，优缺点每点含加粗标题最多两行。"
